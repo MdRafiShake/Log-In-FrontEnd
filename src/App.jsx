@@ -13,7 +13,7 @@ function App() {
 
   const fetchData = async () => {
     try {
-      const response = await fetch('http://localhost:3000/create', {
+      const response = await fetch('https://log-in-server-q7c8.onrender.com/create', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -44,7 +44,7 @@ function App() {
 
   const getData = async () => {
     try {
-      const response = await fetch("http://localhost:3000/read", {
+      const response = await fetch("https://log-in-server-q7c8.onrender.com/read", {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -73,7 +73,7 @@ function App() {
 
   const updateData = async (id, userName, passWord) => {
     try {
-      const response = await fetch(`http://localhost:3000/update/${id}`, {
+      const response = await fetch(`https://log-in-server-q7c8.onrender.com/update/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -96,7 +96,7 @@ function App() {
 
   const deleteData = async (id) => {
     try {
-      const response = await fetch(`http://localhost:3000/delete/${id}`, {
+      const response = await fetch(`https://log-in-server-q7c8.onrender.com/delete/${id}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
