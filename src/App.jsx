@@ -96,7 +96,7 @@ function App() {
 
   const deleteData = async (id) => {
     try {
-      const response = await fetch(`http://localhost:3000/delete/${id}`, {
+      const response = await fetch(`https://log-in-server-q7c8.onrender.com/delete/${id}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
